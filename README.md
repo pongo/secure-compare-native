@@ -2,8 +2,6 @@
 
 Constant-time safe comparison using Node.js native [crypto.timingSafeEqual](https://nodejs.org/api/crypto.html#crypto_crypto_timingsafeequal_a_b).
 
-Ggeh
-
 ### Installation
 
 ```
