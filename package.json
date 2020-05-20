@@ -1,6 +1,6 @@
 {
   "name": "secure-compare-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Constant-time safe comparison using Node.js native crypto.timingSafeEqual",
   "main": "index.js",
   "types": "index.d.ts",
