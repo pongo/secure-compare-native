@@ -16,7 +16,7 @@ Strings:
 const { secureCompare } = require("secure-compare-native");
 
 secureCompare("abc", "abc"); // true
-secureCompare("ABC", "abc"); // false
+secureCompare("hello", "abc"); // false
 ```
 
 Buffers: 
@@ -25,7 +25,7 @@ Buffers:
 const { secureCompareBuffer } = require("secure-compare-native");
 
 const buff1 = Buffer.from("abc");
-const buff2 = Buffer.from("ABC");
+const buff2 = Buffer.from("hello");
 
 secureCompareBuffer(buff1, buff1); // true
 secureCompareBuffer(buff2, buff1); // false

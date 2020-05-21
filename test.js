@@ -27,7 +27,7 @@ describe("secureCompare()", () => {
   });
 
   it("should return false if the strings are different", () => {
-    assert.ok(!secureCompare("ABC", "abc"));
+    assert.ok(!secureCompare("hello", "abc"));
     assert.ok(!secureCompare("abc", "ab"));
     assert.ok(!secureCompare("abc", "abd"));
     assert.ok(!secureCompare("", "abc"));
@@ -37,7 +37,7 @@ describe("secureCompare()", () => {
 
 describe("secureCompareBuffer()", () => {
   const buff1 = Buffer.from("abc");
-  const buff2 = Buffer.from("ABC");
+  const buff2 = Buffer.from("hello");
 
   it("should return true if the buffers are identical", () => {
     strings
